@@ -1,0 +1,17 @@
+技术栈手册
+
+The rules and technical manuals include material from:
+  ai-product-starter-kit
+  https://github.com/hubooooooo/ai-product-starter-kit
+  Source revision: 955871e830e8ec29abfbdee688fff89992fede40
+  Copyright (c) 2025 hubooooooo
+  Licensed under the MIT License; the original license is retained in LICENSE.
+
+Project presentation, cover artwork, documentation corrections and release tooling:
+  Copyright (c) 2026 李俊祎
+  Licensed under the MIT License.
+
+Third-party product names and services mentioned in the manuals belong to their
+respective owners. This documentation does not grant rights to their trademarks,
+accounts, services or credentials. Any tools installed for a downstream project
+remain subject to their own applicable licenses and terms.

@@ -1,0 +1,29 @@
+name: Documents and download
+
+on:
+  push:
+    branches: [current]
+  pull_request:
+    branches: [current]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check documents
+        run: python scripts/check_docs.py
+      - name: Build and verify download
+        run: python scripts/package_release.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tech-stack-handbook
+          path: dist/tech-stack-handbook.zip
+          if-no-files-found: error
